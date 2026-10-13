@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Model / render artifacts
+animator_cache/
+frames/
+exports/
+*.mp4
+*.webm
+*.gif
+*.safetensors
+*.ckpt
+*.onnx
+
+# Local config
+config/local.toml
+config/*.local.toml
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
