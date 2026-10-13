@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://animator-host.dev/schemas/frame_request.schema.json",
+  "title": "FrameRequest",
+  "type": "object",
+  "required": ["source_image", "frame_count"],
+  "properties": {
+    "source_image": { "type": "string", "minLength": 1 },
+    "frame_count": { "type": "integer", "minimum": 1, "maximum": 600 },
+    "fps": { "type": "integer", "minimum": 1, "maximum": 120, "default": 24 },
+    "prompt": { "type": ["string", "null"] },
+    "seed": { "type": ["integer", "null"] }
+  },
+  "additionalProperties": false
+}
